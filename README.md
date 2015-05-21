@@ -1,0 +1,7 @@
+# norkts-spider
+网络爬虫的初步实现
+多线程的网络爬虫，App类是一个抓取百度新闻的所有网页存储到本地的实例程序
+程序中使用了Jsoup作为HTML解析器
+要实际使用，首先需要给ProcessThread添加Processor,如果需要URL过滤，还需要添加URL Filter
+HTTP请求的客户端是apache httpclient
+TODO: 目前中文URL httpclient会报错，需要做进一步的处理，应该是URLEncode的问题，此处需要重写
